@@ -1,0 +1,855 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  color: #fff;
+}
+
+html {
+  font-size: 65.5%;
+}
+
+body {
+  font-family: "Alegreya";
+}
+
+:root {
+  --primary-color: #c8191c;
+  --secondary-color: #ffffff;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.visible-scrollbar,
+.invisible-scrollbar,
+.mostly-customized-scrollbar {
+  display: block;
+  width: 10em;
+  overflow: auto;
+  height: 2em;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: black;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 10px;
+
+  height: 60px;
+}
+
+img {
+  max-width: 100%;
+  /* /  display: block; */
+}
+
+.main-title {
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  color: red;
+  text-transform: uppercase;
+}
+
+.sub-title {
+  font-size: 8.4rem;
+  font-style: normal;
+  font-weight: 700;
+  color: var(--secondary-color);
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #fff;
+}
+
+/* --------------------header */
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9999;
+}
+
+.navbar-brand img {
+  width: 15rem;
+}
+
+.nav-link {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  margin: 0 15px;
+  padding: 3rem 0;
+}
+
+.nav-link:hover {
+  color: red;
+}
+
+.navbar-collapse {
+  text-align: center;
+}
+
+/* --------------------header*/
+
+/* ---------hero---------------- */
+
+#hero {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(180deg, #000 36.84%, #c8191c 223.16%);
+  position: relative;
+  padding-top: 10rem;
+}
+
+#hero .container {
+  position: relative;
+  z-index: 999;
+}
+
+#hero::after {
+  content: "";
+  background-image: url(/Assets/images/chakra.png);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background-size: 100% auto;
+  position: absolute;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.hero-data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero-data h1 {
+  font-size: 13rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16rem;
+  /* 123.077% */
+  text-align: center;
+  padding-top: 22rem;
+}
+
+.hero-data span {
+  color: red;
+}
+
+.hero-data p {
+  text-align: center;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  padding-top: 5.5rem;
+  color: white;
+}
+
+.comman-button {
+  color: var(--4, #FFF);
+  font-family: Alegreya;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  width: 30rem;
+  height: 6.3rem;
+  padding: 1.5rem 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background: var(--1, #C8191C);
+}
+
+.hero-btn {
+  margin-top: 5.5rem;
+}
+
+.about-btn {
+  margin-top: 9rem;
+}
+
+.form-btn {
+  margin-top: 8rem;
+}
+
+/* ---------------hero---------------- */
+
+/* -------about----------------- */
+
+#about {
+  background: linear-gradient(0deg, #000 36.84%, #c8191c 223.16%);
+  padding-top: 20rem;
+  padding-bottom: 10rem;
+}
+
+.about-imgs h3 {
+  font-size: 2.5rem;
+  color: #fff;
+  font-size: 5.4rem;
+  font-style: normal;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+.about-data {
+  margin-top: 14rem;
+}
+
+.about-img img {
+  border-right: 2px solid #fff;
+  padding-right: 10rem;
+}
+
+.about-img p {
+  padding-top: 8rem;
+  font-size: 1.5rem;
+  color: #fff;
+  max-width: 80%;
+}
+
+.about-desc {
+  padding-left: 8rem;
+}
+
+.about-desc h1 {
+  font-size: 8.4rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
+/* -----------about----------- */
+
+/* -------about--2-------------- */
+
+#about-2 {
+  background: linear-gradient(180deg, #000 37.37%, #c8191c 231.27%);
+  padding-top: 20rem;
+  padding-bottom: 10rem;
+}
+
+.about-2-text h1 {
+  color: var(--4, #FFF);
+  font-family: Alegreya;
+  font-size: 14rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.about-2-text p {
+  color: var(--4, #FFF);
+  font-family: Alegreya;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 9rem;
+}
+
+.about-2-img {
+  padding-left: 3rem;
+}
+
+.aabout-2 h1 {
+  color: var(--4, #FFF);
+  font-family: Alegreya;
+  font-size: 13rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 6rem;
+}
+
+/* ------------about--2----------------- */
+
+/* ------------reports-------------------- */
+
+#forecast {
+  background: linear-gradient(0deg, #000 36.84%, #c8191c 223.16%);
+  padding-top: 20rem;
+  padding-bottom: 10rem;
+}
+
+#forecast .row {
+  row-gap: 15rem;
+  margin-top: 10rem;
+}
+
+.forecast-image h1 {
+  margin-top: 5rem;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 4.4rem;
+}
+
+.forecast-image p {
+  margin-top: 2rem;
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+.forecast-image {
+  border: 2px solid #fff;
+  padding: 5rem;
+}
+
+#forecast .col-lg-6:nth-child(odd) {
+  padding: 0 7.5rem 0 4.2rem;
+}
+
+#forecast .col-lg-6:nth-child(even) {
+  padding: 0 4.1rem 0 7.5rem;
+}
+
+/* ------------reports-------------------- */
+
+/* --------why---------------------------- */
+
+#why {
+  background: linear-gradient(180deg, #000 37.37%, #c8191c 231.27%);
+  padding-top: 20rem;
+  padding-bottom: 10rem;
+}
+
+.why-data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 17rem;
+}
+
+.why-data h3 {
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 3rem;
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+.why-data p {
+  color: #fff;
+  margin-top: 3rem;
+  font-size: 1.8rem;
+}
+
+.why-data img {
+  width: 100px;
+}
+
+/* ------------why------------------- */
+
+/* -----understanding------------------------ */
+
+#understanding {
+  background: linear-gradient(0deg, #000 37.37%, #c8191c 231.27%);
+  padding-top: 20rem;
+  padding-bottom: 10rem;
+}
+
+.under-data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.under-data h3 {
+  color: #fff;
+  font-size: 4.5rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.under-data p {
+  color: #fff;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.under-row {
+  margin-top: 9rem;
+  margin-bottom: 10rem;
+}
+
+.under-aries {
+  padding-right: 12rem;
+}
+
+.under-virgo {
+  padding-left: 12rem;
+}
+
+.underneeth-data {
+  padding-left: 6rem;
+}
+
+.under-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#numbers {
+  margin-top: 20rem;
+}
+
+/* ---------understanding------------------------ */
+
+/* ------------formation--------------------- */
+
+
+#formation {
+  background: linear-gradient(180deg, #000 37.37%, #c8191c 231.27%);
+  padding-top: 20rem;
+  padding-bottom: 10rem;
+}
+
+form .col-6 {
+  padding-top: 5rem;
+}
+
+.form-text {
+  padding-top: 12rem;
+}
+
+form input {
+  padding: 2.5rem 6.5rem 2.5rem 3rem;
+  background-color: transparent;
+  border: 2px solid white;
+  font-size: 2.3rem;
+  width: 94%;
+}
+
+form select {
+  padding: 2.5rem 6.5rem 2.5rem 3rem;
+  background-color: transparent;
+  border: 2px solid white;
+  font-size: 2.3rem;
+  width: 94%;
+}
+
+select {
+  color: white;
+}
+
+::placeholder {
+  color: white;
+}
+
+label {
+  color: #fff;
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+option {
+  background-color: #000;
+}
+
+.form-head {
+  margin-top: 8rem;
+}
+
+/* -----------------formation--------------------- */
+
+/* -----membership-page------------------ */
+
+#membership-page {
+  height: 35vh;
+  width: 100%;
+  padding-top: 6rem;
+  background: linear-gradient(0deg, #000 36.84%, #c8191c 223.16%);
+  position: relative;
+  z-index: 999;
+}
+
+#membership-page::before {
+  content: "";
+  background-image: url(https://media.istockphoto.com/id/1372910783/photo/astrological-wheel-projection-choose-a-zodiac-sign.webp?b=1&s=170667a&w=0&k=20&c=Lqaqi8JrX677-6kLTi_1nMc89La9N5RFuslHCZ2sqhw=);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background-size: 100% auto;
+  position: absolute;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+}
+
+.member-text h1 {
+  font-size: 8.4rem;
+  color: #fff;
+}
+
+.member-text p {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  margin-bottom: 5rem;
+}
+
+
+/* -----membership-page------------------ */
+
+/* ------buy member-------------- */
+
+#buy-member {
+  background: linear-gradient(0deg, #000 36.84%, #c8191c 223.16%);
+  padding-top: 20rem;
+  padding-bottom: 10rem;
+}
+
+.member-card {
+  border: 1px solid white;
+  padding: 6rem 0;
+
+}
+
+.member-price {
+  margin-top: 8rem;
+}
+
+.mmm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.mmm img {
+  margin-right: 1rem;
+  margin-top: 4rem;
+}
+
+.member-card {
+  margin: 0 2rem;
+  transition: all ease 0.3s;
+}
+
+.inter-span {
+  color: #fff;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.mmm-text {
+  color: var(--4, #FFF);
+  font-family: Alegreya;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 4rem;
+}
+
+.mem-btn {
+  margin: 8rem 0 3rem 0;
+  padding: 14px 109px;
+  transition: all ease 0.3s;
+}
+
+.member-price h5 {
+  margin-top: 2.5rem;
+  font-size: 2.4rem;
+}
+
+.member-price h1 {
+  font-size: 7.2rem;
+  margin-top: 3rem;
+}
+
+.member-card:hover {
+  background-color: red;
+  scale: 0.97;
+  border: 3px solid white;
+  border-radius: 10px;
+}
+
+.member-card:hover .incoman {
+  background-color: #ffffff;
+  color: #000;
+}
+
+.incoman {
+  display: flex;
+  width: 30rem;
+  padding: 1.5rem 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: var(--4, #FFF);
+  font-family: Alegreya;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: var(--1, #C8191C);
+  margin: 8rem 0 0 8rem;
+}
+
+/* ------buy member-------------- */
+
+/* ------------testimonial----------------- */
+
+#testimonials {
+  background: linear-gradient(180deg, #000 37.37%, #c8191c 231.27%);
+  padding-top: 20rem;
+  padding-bottom: 10rem;
+}
+
+#testimonials h1 {
+  font-size: 8rem;
+}
+
+.st-arrow {
+  margin-top: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------swiper--------------- */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin-top: 12rem;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 16rem;
+}
+
+.swip-desp {
+  margin-top: 8rem;
+}
+
+.swip-desp p {
+  font-size: 1.8rem;
+  text-align: start;
+  margin-top: 4rem;
+}
+
+.swip-desp h3 {
+  font-size: 2.4rem;
+  text-align: start;
+  margin-top: 2rem;
+  font-weight: 400;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 65rem;
+  object-fit: cover;
+}
+
+
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: #fff;
+}
+
+
+svg {
+  position: absolute;
+  top: 70rem;
+  left: 12rem;
+}
+
+/* ------------swiper---------------- */
+
+/* ------------testimonial----------------- */
+
+/* ---------blog--------------------- */
+
+#blog {
+  background: linear-gradient(0deg, #000 37.37%, #c8191c 231.27%);
+  padding-top: 20rem;
+  padding-bottom: 10rem;
+}
+
+.blog-log {
+  margin-top: 4rem;
+  padding: 0 20px;
+}
+
+.blog-log img {
+  height: 490px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.blog-log h3 {
+  margin-top: 5rem;
+  font-size: 2.4rem;
+}
+
+.blog-log p {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+}
+
+.blog-log span {
+  color: rgb(53, 53, 255);
+}
+
+.inside-blog {
+  margin-top: 4.4rem
+}
+
+/* ---------blog--------------------- */
+
+/* -------------footer------------------------ */
+
+footer {
+  background: linear-gradient(180deg, #000 37.37%, #c8191c 231.27%);
+  padding-bottom: 10rem;
+}
+
+footer .row {
+  padding-top: 5rem;
+  border-top: 1px solid white;
+}
+
+.f-links {
+  display: flex;
+  align-items: center;
+}
+
+.f-links i {
+  margin-right: 1rem;
+}
+
+footer h4 {
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.foot-label img {
+  width: 70%;
+}
+
+.foot-label p {
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 2rem;
+}
+
+.foot-label-2 {
+  padding-left: 4rem;
+}
+
+.foot-label-2 li {
+  margin-top: 2rem;
+}
+
+.foot-label-2 a {
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.foot-label-3 {
+  padding-left: 5rem;
+}
+
+.foot-label-3 a {
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.foot-label-3 li {
+  margin-top: 2rem;
+}
+
+.foot-label-4 li {
+  margin-top: 2rem;
+}
+
+.foot-label-4 i {
+  font-size: 20px;
+  margin: 0 8px;
+}
+
+.foot-label-4 a {
+
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.foot-label-5 {
+  padding-left: 6rem;
+}
+
+.foot-label-5 iframe {
+  height: 250px;
+  width: 100%;
+
+}
+
+.foot-label-5 h4 {
+  margin-top: 2rem;
+}
+
+.foot-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+  border-bottom: 1px solid white;
+  padding-bottom: 4rem;
+}
+
+.foot-text h3 {
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+/* -------------footer------------------------ */

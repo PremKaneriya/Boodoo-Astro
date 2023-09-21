@@ -1,0 +1,13 @@
+@media screen and (min-width: 1700px)  {
+    .container {
+        max-width: 160rem;
+        padding: 0 1rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .nav-item .nav-link {
+        border-bottom: 1px solid white;
+    }
+
+}
